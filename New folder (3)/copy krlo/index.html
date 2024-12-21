@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Copy krlo</title>
+
+	</head>
+	<body>
+		<p>plz ye data copy mat krna</p>		
+
+
+	</body>
+	<script >
+		document.addEventListener("copy", (event) => {
+			const selectData = window.getSelection().toString();
+			event.clipboardData.setData(
+				"text/plain",
+				"Try Next Time"
+	);
+			event.preventDefault();
+})
+	</script>
+
+</html>
